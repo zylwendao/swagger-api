@@ -14,7 +14,7 @@ import java.net.URL;
 import java.nio.file.Paths;
 
 @Component
-public class MakeSwaggerUtil {
+public class MakeSwaggerApiUtil {
 
 
     @Autowired
