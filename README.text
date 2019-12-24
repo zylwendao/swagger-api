@@ -33,8 +33,7 @@ public class XxxxController {
 		@ComponentScan(basePackages={"com.xxx你的项目扫描地址","swagger"})
 		
 3. 运行 : 
-      生成 markdown 类型文件 : 新建一个 Controller(如下) ,运行工具类,你就可以在你的 Resourses 文件夹下面看到新生产的 doc 文件夹,如果看不见就鼠标右键点击 resoueces 文件夹
-                             选择 - Reload from disk - 功能刷新一下;
+      生成 markdown 类型文件 : 新建一个 Controller(如下) ,运行工具类,你就可以在你的 Resourses 文件夹下面看到新生产的 doc 文件夹,如果看不见就鼠标右键点击 resoueces 文件夹选择 - Reload from disk - 功能刷新一下;
                              
               @RestController
               public class MakeApi {
