@@ -63,16 +63,10 @@
  
  冲突:
     下面这两个 pom 依赖需要暂时注释掉 ( 如果你的项目有用到的话 ) ,不然会报异常,导致不能正常运行 swagger
-		<dependency>
+    		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>2.9.9.1</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>jackson-annotations</artifactId>
-					<groupId>com.fasterxml.jackson.core</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
         
 	
