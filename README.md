@@ -7,7 +7,7 @@
             <groupId>org.example</groupId>
             <artifactId>swagger-api</artifactId>
             <version>1.0-SNAPSHOT</version>
-          </dependency>
+        </dependency>
     2.2 SpringBoot 启动类注解(添加下面这 2 个就够了):
           @EnableSwagger2Doc
           @ComponentScan(basePackages={"com.xxx你的项目扫描地址","swagger"})
@@ -53,11 +53,33 @@
                 </configuration>
             </plugin>
             
- 备注: swagger 想要配置文档信息的话,可以在你项目的 application.yml 文件里面加入配置,这里只举例一个 title,其他的可以自行百度.
+ 备注: 
+ swagger 想要配置文档信息的话,可以在你项目的 application.yml 文件里面加入配置,这里只举例一个 title,其他的可以自行百度.
  swagger:
   enabled: true
   title: "我是 title"
-            
+  
+ 出现异常 : java.lang.NumberFormatException: For input string: "",这个不用管,是 swagger 的数字转换异常,是 swagger 插件的 bug,不影响程            序运行.
+ 
+ 冲突:
+    下面这两个 pom 依赖需要暂时注释掉 ( 如果你的项目有用到的话 ) ,不然会报异常,导致不能正常运行 swagger
+    	<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.9.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jackson-annotations</artifactId>
+					<groupId>com.fasterxml.jackson.core</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+        
+        <dependency>
+			<groupId>org.owasp.esapi</groupId>
+			<artifactId>esapi</artifactId>
+			<version>2.1.0</version>
+		</dependency>
             
             
             
