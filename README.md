@@ -3,11 +3,11 @@
 1. 下载 : 下载或 clone 此项目,运行 maven 的 install 命令将本项目安装到 maven 库
 2. 配置 : 你的项目不用添加任何 swagger 的依赖,只需要将此项目的 maven 坐标引入你项目的 pom 依赖,并且在你的项目的启动类上加入扫描地址 "swagger"
     2.1 maven 坐标:
-          <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>swagger-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+		<dependency>
+			<groupId>org.example</groupId>
+			<artifactId>swagger-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
     2.2 SpringBoot 启动类注解(添加下面这 2 个就够了):
           @EnableSwagger2Doc
           @ComponentScan(basePackages={"com.xxx你的项目扫描地址","swagger"})
@@ -63,7 +63,7 @@
  
  冲突:
     下面这两个 pom 依赖需要暂时注释掉 ( 如果你的项目有用到的话 ) ,不然会报异常,导致不能正常运行 swagger
-    	<dependency>
+		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>2.9.9.1</version>
@@ -75,7 +75,7 @@
 			</exclusions>
 		</dependency>
         
-        <dependency>
+		<dependency>
 			<groupId>org.owasp.esapi</groupId>
 			<artifactId>esapi</artifactId>
 			<version>2.1.0</version>
