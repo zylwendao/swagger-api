@@ -3,7 +3,7 @@
 1. 下载 : 下载或 clone 此项目,运行 maven 的 install 命令将本项目安装到 maven 库
 2. 配置 : 你的项目不用添加任何 swagger 的依赖,只需要将此项目的 maven 坐标引入你项目的 pom 依赖,并且在你的项目的启动类上加入扫描地址 "swagger"
     2.1 maven 坐标:
-		<dependency>
+    		<dependency>
 			<groupId>org.example</groupId>
 			<artifactId>swagger-api</artifactId>
 			<version>1.0-SNAPSHOT</version>
@@ -75,6 +75,7 @@
 			</exclusions>
 		</dependency>
         
+	
 		<dependency>
 			<groupId>org.owasp.esapi</groupId>
 			<artifactId>esapi</artifactId>
