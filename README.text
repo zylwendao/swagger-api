@@ -51,10 +51,10 @@ public class XxxxController {
 	      执行成功 : 返回 success
                              
       生成 html 类型文件 : 必需先执行一次上面的 controller(因为要用到这个 controller 生成的 asciidoc.adoc文件),
-      			   然后在你的 pom 的 <build> 标签的<plugins> 里面加入下面的打包工具,
-			   然后在你 IDEA 的 maven 的 plugins 里面找到 asciidoctor -> asciidoctor:process-asciidoc ,
-			   找到以后鼠标右键选择 Run Maven Build ,搞定! 
-			   resources 里面就会生成 docs 文件夹,这里面就会有 html 接口文件,没有就刷新一下,如何刷新,如上. 
+      			然后在你的 pom 的 <build> 标签的<plugins> 里面加入下面的打包工具,
+			然后在你 IDEA 的 maven 的 plugins 里面找到 asciidoctor -> asciidoctor:process-asciidoc ,
+			找到以后鼠标右键选择 Run Maven Build ,搞定! 
+			resources 里面就会生成 docs 文件夹,这里面就会有 html 接口文件,没有就刷新一下,如何刷新,如上. 
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
