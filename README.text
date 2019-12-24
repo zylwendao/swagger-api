@@ -50,9 +50,10 @@ public class XxxxController {
                   }
               }
               
-              访问地址 : http://localhost:8080(注意修改成你的端口)/make; 
+              调用工具链接 : http://localhost:8080(注意修改成你的端口)/make; 
 	      执行成功 : 返回 success
-                             
+              
+	      在线查看 API 地址 : http://localhost:8080/swagger-ui.html
       生成 html 类型文件 : 必需先执行一次上面的 controller(因为要用到这个 controller 生成的 asciidoc.adoc文件),
       			然后在你的 pom 的 <build> 标签的<plugins> 里面加入下面的打包工具,
 			然后在你 IDEA 的 maven 的 plugins 里面找到 asciidoctor -> asciidoctor:process-asciidoc ,
