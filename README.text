@@ -20,7 +20,7 @@ public class XxxxController {
 
 1. 下载 : 下载或 clone 此项目,运行 maven 的 install 命令将本项目安装到 maven 库
 
-2. 配置 : 你的项目不用添加任何 swagger 的依赖,(如果不想将我的这个 API 生成项目嵌入你的项目,想用完一次就拉倒,
+2. 配置 : 你的项目不用添加任何 swagger 的依赖,(如果不想将我的这个 API 生成项目嵌入你的项目,想用完一次生成接口文档之后就拉倒,
 	你可以先注释掉你自己项目 pom 的 swagger 依赖,暂时先用我的这个,
 	用完了再删掉我的 maven 坐标,恢复你自己pom 里面的 swagger 依赖)
 	只需要将此项目的 maven 坐标(如下)引入你项目的 pom 依赖,并且在你的项目的启动类上加入扫描地址 "swagger"
